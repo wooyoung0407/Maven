@@ -1,13 +1,19 @@
 package org.example;
 
 public class Article {
-    public int id;
-    public String title;
+    int id;
+    String title;
     String content;
 
-    public Article(int id, String title, String content) {
+    String regDate;
+
+    String updateDate;
+
+    public Article(int id, String regDate, String updateDate, String title, String content) {
         this.id = id;
         this.title = title;
-        this.content= content;
+        this.content = content;
+        this.regDate = regDate;
+        this.updateDate = updateDate;
     }
 }
